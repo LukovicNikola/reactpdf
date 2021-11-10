@@ -95,7 +95,7 @@ class App extends React.Component {
       content: html,
     };
     pdfMake.vfs = pdfFonts.pdfMake.vfs;
-    pdfMake.createPdf(documentDefinition).download();
+    pdfMake.createPdf(documentDefinition).open();
   }
 
   render() {
