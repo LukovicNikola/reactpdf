@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">reactpdf</string>
+    <string name="title_activity_main">reactpdf</string>
+    <string name="package_name">io.ionic.reactpdf</string>
+    <string name="custom_url_scheme">io.ionic.reactpdf</string>
+</resources>

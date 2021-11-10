@@ -1,0 +1,7 @@
+{
+  "name": "reactpdf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
