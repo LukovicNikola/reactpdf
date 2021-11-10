@@ -95,17 +95,7 @@ class App extends React.Component {
       content: html,
     };
 
-    pdfMake.vfs = pdfFonts.pdfMake.vfs;
-
-    // pdfMake.createPdf(documentDefinition).download();
-
-    const pdfDocGenerator = pdfMake.createPdf(documentDefinition);
-    pdfDocGenerator.getDataUrl((dataUrl) => {
-      const targetElement = document.querySelector("#iframeContainer");
-      const iframe = document.createElement("iframe");
-      iframe.src = dataUrl;
-      targetElement.appendChild(iframe);
-    });
+    pdfMake.createPdf(documentDefinition).open({}, window);
   }
 
   render() {
