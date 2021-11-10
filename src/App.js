@@ -42,6 +42,8 @@ class App extends React.Component {
     woStatus = mapQsUrl.status || "";
     woSubjectA = mapQsUrl.subjectA || "";
     woStatusW = mapQsUrl.statusW || "";
+
+    console.log("DOZI JE VELIKA LEGENDA");
   }
 
   printDocument() {
