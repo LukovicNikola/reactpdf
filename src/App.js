@@ -18,7 +18,6 @@ let woSubjectA = "";
 let woStatusW = "";
 class App extends React.Component {
   componentDidMount() {
-    console.log("POYY");
     const queryString = ` data={!Print_data_set__c}&firstname={!User.firstName}&firstnameD={Alessandro}&lastname={!User.lastName}&lastnameA={Fiorentino}&subject={!Subject}&status={!Status}&subjectA={APP}&statusW={WIP}`;
 
     const qsUrl = queryString.slice(1);
