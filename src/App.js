@@ -1,12 +1,12 @@
 import React from "react";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-import jsPDF from "jspdf";
+import "./App.css";
 import pdfMake from "pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import htmlToPdfmake from "html-to-pdfmake";
-import { useEffect, useState } from "react";
+import Button from "@mui/material/Button";
+import PictureAsPdfSharpIcon from "@mui/icons-material/PictureAsPdfSharp";
 
 let firstname = "";
 let lastname = "";
@@ -108,12 +108,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>HTML5 TO PDF APP</h2>
-
-        <button className="btn btn-primary" onClick={this.printDocument}>
-          Export HTML5 To PDF
-        </button>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <Button
+          onClick={this.printDocument}
+          variant="outlined"
+          startIcon={<PictureAsPdfSharpIcon />}
+        >
+          Generate PDF
+        </Button>
       </div>
     );
   }
