@@ -91,15 +91,6 @@ class App extends React.Component {
 
     const documentDefinition = {
       content: html,
-      styles: {
-        header: {
-          fontSize: 22,
-          bold: true,
-        },
-        anotherStyle: {
-          italics: true,
-        },
-      },
     };
     pdfMake.vfs = pdfFonts.pdfMake.vfs;
     pdfMake.createPdf(documentDefinition).download();
